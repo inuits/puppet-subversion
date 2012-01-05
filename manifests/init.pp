@@ -14,6 +14,6 @@ class subversion {
 
   include subversion::packages
   include subversion::setup
-  Class['apache::packages'] -> Class['subversion::setup']
+  Class['subversion::packages'] -> Class['subversion::setup']
 
 }

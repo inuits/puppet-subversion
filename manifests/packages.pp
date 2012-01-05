@@ -11,7 +11,7 @@
 # === Sample Usage:
 #
 class subversion::packages {
-  require apache::params
+  require subversion::params
 
   @package {$subversion::params::package:
     ensure => installed,
